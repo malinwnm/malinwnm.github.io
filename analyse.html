@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dette er analyse siden til Webutvikling nettsiden min, hvor analyse av siden vil bli gjort og resultater vil bli satt inn">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+
+    <title>Webutvikling</title>
+    <link rel="icon" type="image/ico" href="./img/favicon.ico">
+    <link href="analyse.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        <!--Facebook Cards-->
+        <meta property="og:title" content="Webutvikling" >
+        <meta property="og:url"   content="https://itstud.hiof.no/~mwmenend/webutvikling_22/Deleksamen4/">
+        <meta property="og:description" content="Dette er en nettside for faget mitt Webutvikling">
+        <meta property="og:image" content="img/ezgif.com-gif-maker.webp" >
+        <meta property="og:image: alt" content="Bilde av header for nettsiden" >
+    
+        <!--Twitter Cards-->
+        <meta name="twitter:title" content="Webutvikling">
+        <meta name="twitter:url" content="https://itstud.hiof.no/~mwmenend/webutvikling_22/Deleksamen4/">
+        <meta name="twitter:description" content="Dette er en nettside for faget mitt Webutvikling">
+        <meta name="twitter:image" content="img/ezgif.com-gif-maker.webp">
+ 
+</head>
+	<body>
+		<div id="grid-container">
+
+            <header>
+                <h1><a href="index.html">Webutvikling</a></h1>
+
+                <nav tabindex="0">
+                    <ul>
+                        <li><a href="index.html">Hjem</a></li>
+                        <li><a href="cms.html">CMS</a></li>
+                        <li><a href="analyse.html">Analyse</a></li>
+                        <li><a href="uuvsseo.html">UU vs. SEO</a></li>
+                    </ul>
+                <a class="button" href="kontaktoss.html">Kontakt oss</a> 
+                </nav>
+                <h2>Analyse</h2>    
+            </header>
+            
+            <main>
+                <article> 
+                    <h3>Dokumentasjon av analyse</h3>
+                       <p>
+                            Jeg brukte Lighthouse til å analysere siden min. Dette er hva jeg fikk opp før jeg endret noe som helst. Resultatet var ganske greit, men selvfølgelig prøvde
+                            jeg å forbedre de ulike kategoriene så mye så mulig, for å få det til å bli enda bedre.
+                       </p>
+                       <img class="analyseimg" src="img/analyseresultat.webp" alt="Bilde av analyse resultat for siden">
+                    <h4>Performance</h4>
+                       <p>
+                            Innenfor Performance så fikk jeg opp dette:
+                       </p>
+                       <!--Sette inn bilde av resultatene innenfor kategoriene-->
+                       <p>
+                            På bildet øverst på index siden min fikk jeg opp at bildet ikke hadde fått satt opp ordentlig width og height, så la til height inne på css, hadde
+                            allerede en width på den, men ikke height. Jeg valgte også å gjøre om bildene mine fra jpg/png til webp, for å forhåpentligvis hjelpe på
+                            performance for siden. Det minimerer ihvertfall størrelsen på alle bildene, sånn at det ikke tar opp like mye plass. 
+                       </p>
+                       <img class="performanceresult" src="img/performanceresult.webp" alt="Bilde av hva som kan endres på innenfor Performance">
+
+                       <h4>Best Practices</h4>
+                        <p>
+                            Innenfor Best Practices så fikk jeg opp dette:
+                        </p>
+                        <img class="bestpractices" src="img/bestpractices.webp" alt="Bilde av Best Practice resultatene av denne siden">
+                        <p>
+                            En av tingene jeg fikk opp var at bilde ration på bildene på artikkel delen av index siden ikke stemte med hvordan det faktiske ration skulle være.
+                        </p>
+
+                       <h4>Accessibility</h4>
+                       <p>
+                            Innenfor Accessibility så fikk jeg opp dette:
+                            <!--Sette inn bilde av resultatene innenfor kategoriene-->
+                       </p>
+                            <img class="accessresulterror" src="img/accessresulterror.webp" alt="Bilde av error resultat av Accessibility på siden.">
+                       <p>
+                            For linkene til sosiale medie knappene så la jeg til aria-label for å legge til tekst til linken. 
+                       </p>
+
+                       <h4>SEO</h4>
+                       <p>
+                            Innenfor SEO fikk jeg kun opp en ting, og det var at jeg manglet meta tag i head tagen min øverst på alle sidene mine. Dette ble da fikset ved å legge en 
+                            meta tag øverst på siden min, i head-tagen. Dette ble lagt inn øverst på alle sidene.
+                            <img class="seoresultat" src="img/seoresultat.webp" alt="Bilde av hva som kan forbedres på seo delen av siden min">
+                            <!--Sette inn bilde av resultatene innenfor kategoriene-->
+                       </p>
+
+                       <h4>Sluttresultat</h4>
+                       <p>
+                        Etter å ha gjort ferdig analysen min, er dette det jeg fikk opp:
+                        <img class="analyseresultatdel6" src="img/analyseresultatdel6.webp" alt="Bilde av sluttresultat fra analysen min">
+                       </p>
+                       <p>
+                            Jeg prøvde å fikse det meste jeg kunne, for best mulig resultat, og vil si at resultatet jeg fikk er jeg fornøyd med. Litt usikker på hvorfor Performance gikk
+                            ned litt, men prøvde å fikse så best så mulig. Neste steg nå blir å gå gjennom
+                            tilgjengelighetsærkleringen og se hva jeg kan få gjort der. En Heuristisk Evaluering av siden vil også bli tatt.
+                       </p>
+                </article>
+
+                <div id="table">
+                    <div id="table-row1"> 
+                        <div id="table-col1" style="height: 60px; font-size: 25px; text-align: center; color: white; background: purple;"></div>
+                        <div id="table-col2" style="font-size: 19px; text-align: center;" ><p>Performance</p></div>
+                        <div id="table-col3" style="font-size: 19px; text-align: center;"><p>Accessibility</p></div>
+                        <div id="table-col4" style="font-size: 19px; text-align: center;"><p>Best Practices</p></div>
+                        <div id="table-col5" style="font-size: 19px; text-align: center;"><p>SEO</p></div>
+                    </div>
+                    
+                    <div id="table-row2">
+                        <div id="table-col6" style="height: 60px; font-size: 25px; text-align: center; color: white; background: purple;">Før</div> 
+                        <div id="table-col7" style="font-size: 15px;"><p>.banner bilde: "Image elements do not have explicit width and height"</p>
+                        </div> 
+
+                        <div id="table-col8" style="font-size: 15px;"><p>Links do not have a discernible name. Linkene til de ulike sosiale mediene mangler alternativ tekst til dem.</p>
+                        </div> 
+
+                        <div id="table-col9" style="font-size: 15px;"><p>Ratio på artikkel bildene på index siden var ikke riktig.</p>
+                            <img class="ratio" src="img/ratio.webp" alt="Bilde ratio error fra analyse resultatene">
+                            </div>  
+
+                        <div id="table-col10" style="font-size: 15px;">Mangler "meta name="description" content="text" >, øverst på siden i head-tagen.</div> 
+                    </div>
+        
+                        <div id="table-row3">
+                            <div id="table-col11" style="height: 60px; font-size: 25px; text-align: center; color: white; background: purple;">Etter</div> 
+                            <div id="table-col12" style="font-size: 15px;"><p>.banner bilde: width og height er nå begge lagt til i css. <img class="bannerratio" src="img/bannerratio.webp" alt="Bilde av css for banner-image"> </p>
+                            </div> 
+
+                            <div id="table-col13" style="font-size: 15px;"><p>Linkene til de sosiale mediene har nå tekst i tilfelle noe skulle gjøre at bilde ikke kommer opp, det ble brukt "aria-label"
+                                for å legge til teksten, det ble lagt til ved linkene til de ulike sosiale mediene: </p>
+                                <img class="medialinktext" src="img/medialinktext.webp" alt="Bilde av link tekst for sosiale medie knappene">
+                              </div> 
+
+                            <div id="table-col14" style="font-size: 15px;"><p>For å fikse ratio på artikkel bildene på index siden så endret jeg på css verdiene.</p>
+                                <img class="imgratiofixed" src="img/imgratiofixed.webp" alt="Bilde ratio error som har blitt fikset">
+
+                            </div> 
+
+                            <div id="table-col15" style="font-size: 15px;">"meta name="description" content="text" manglet øverst på siden, men har nå blitt lagt til i head-tagen. Etter dette ble
+                                gjort havnet SEO-en min på 100 i Lighthouse analyse.
+                                <img class="metatag" src="img/metatag.webp" alt="Bilde av meta tag øverst på siden min.">
+                            </div> 
+                        </div>
+                    </div>
+                <h3>Heuristisk Evaluering</h3>
+                    <article>
+                        <p>
+                            Jeg ser etter å ha tatt en heurstisk evaluering av siden min at punkt 7: Felxibility and efficiency of use, er noe siden min mangler. Jeg skal
+                            få lagt til slik at siden min har en mulighet for å navigeres rundt med tastatur. Da legger jeg til: nav = tabindex="0" ved nav tagen min. Dette
+                            vil gjøre siden min mer tilgjengelig for folk.
+                        </p>
+                        <p>
+                            Siden min er satt opp for å være så simpel og forståelig så mulig, alle nøkkelord og navn brukt skal være direkte og greie å forstå. Sånn 
+                            for eksempel i navigasjonsbaren min, alt er satt opp tydelig for å vise hva som er hva. Ingen ting som er gjemt som folk må lete seg fram til. Navnet på
+                            siden er også en link som bringer deg tilbake til hovedsiden, som er noe alle nettsider har, som folk da er kjent med. Logoen/navn på siden som oftest 
+                            dirigerer deg tilbake til hovedsiden. Siden er strukturert med riktig semantiske tagger. Det skal ikke være noe spørsmål om hva som er hva. Det er header, nav, 
+                            main og footer. 
+                        </p>
+                    </article>
+                <h3>Tilgjengelighetserklæring</h3>
+                        <p>Åpne Pdf filen <a href="Tilgjengelighetserklæring_Webutvikling.pdf">Tilgjengelighetserklæring</a></p>
+
+            </main>
+
+            <div class="footer">
+                <div class="col-1">
+                    <p>Postadresse:</p>
+                        <div class="post-office">Postboks 700</div>
+                        <div class="post-box">NO-1757</div>
+                        <div class="place">Halden</div>
+                        <div class="country">Norway</div>
+                </div>
+                <div class="col-2">
+                    <p>Kontaktinformasjon:</p>
+                        <div class="phone">
+                            Telefon 
+                            <i class="fa fa-phone" style="font-size:24px"></i>
+                            <div class="number">69 60 80 00</div>
+                        </div>
+                        <div class="e-mail">
+                            E-post
+                                <i class="fa fa-envelope" style="font-size:24px"></i>
+                                <a href="mailto:postmottak@hiof.no">
+                                <div class="mail">postmottak@hiof.no</div>
+                            </a>
+                        </div>
+                </div>
+                <div class=".media">
+                    <p>Sosiale Medier</p>
+                    <div class=".fa">
+                        <a href="https://www.facebook.com/hiofnorge/" class="fa fa-facebook" aria-label="Sjekk ut vår Facebook side for mer info."></a>
+                        <a href="https://twitter.com/hiofnorge" class="fa fa-twitter" aria-label="Sjekk ut vår Twitter side for mer info."></a> 
+                        <a href="https://www.instagram.com/hiofnorge/" class="fa fa-instagram" aria-label="Sjekk ut vår Instagram side for mer info."></a>
+                        <a href="#" class="fa fa-pinterest" aria-label="Sjekk ut vår Pinterest side for mer info."></a>
+                        <a href="https://www.youtube.com/channel/UC1xXj5QmBXLfnHxPms7sNFw" class="fa fa-youtube" aria-label="Sjekk ut vår Youtube side for mer info."></a>
+                    </div>
+                    <div class=".share">
+                        <a href="https://twitter.com/hiofnorge?ref_src=twsrc%5Etfw" 
+                        class="twitter-follow-button" data-show-count="false">Follow @hiofnorge</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="large"><a target="_blank" 
+                        href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">SHARE</a></div>
+                        <div id="fb-root"></div>
+                        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/nb_NO/sdk.js#xfbml=1&version=v15.0" nonce="7dZiRC0O"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</body>
+
+</html>
